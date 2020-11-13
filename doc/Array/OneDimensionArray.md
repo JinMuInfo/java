@@ -40,11 +40,15 @@
 数组最长用的用法是访问数组元素，包括对数组元素进行赋值和取出数组元素的值。访问数组元素是通过在数组应用变量后紧跟着一个中括号（[]），中括号里是数组元素的索引值，这样就可以访问数组元素了。索引值也称为下标、角标。访问到数组元素之后，就可以把元素当成一个变量使用，可以通过这个变量进行赋值或取值的操作，这个变量的类型就是定义数组时使用的类型。
 数组索引是从0开始的，也就是说数组的第一个元素的索引值是0，最后一个元素的索引值是数组的长度减1。
 ①　取出元素：
+```
 int[] a = {1,2,3};
               System.out.println(a[0]);
+```
 ②　对数组的元素进行赋值：
+```
 a[1]=9;
               System.out.println(a[1]);
+```
 ③　如果访问元素时，指定的索引值小0或大于等于数组的长度，在编译的时候不会出错，但是在运行的时候出现数组下标越界异常。
 设置索引值为-1：
 a[-1] = 10;
@@ -55,10 +59,11 @@ a[3] = 10;
 这个异常信息后跟着的就是越界的索引值。
  
 数组的长度是通过length属性来获取的，获取了数组的长度，就可以通过循环对数组进行遍历。这里，遍历就是对数组的每个元素进行访问的意思。
+```
 for(int i=0;i<a.length;i++){
                      System.out.println(a[i]);
               }
-              
+```
               
 ### 1.4.  数组的定义与使用
 
@@ -78,7 +83,10 @@ public static void print(int temp[]){ for(int x=0;x<temp.length;x++){ System.out
 }
 System.out.println(); }
 }
-————————————————————— public class Array{
+```
+
+```
+public class Array{
 public static void main(String args[]){ int data[]=new int[]{1,2,3,4,5,6,7,8,9}; print (data);
 reverse(data);
 print(data); }
@@ -91,7 +99,10 @@ public static void print(int temp[]){ for(int x=0;x<temp.length;x++){ System.out
 }
 System.out.println(); }
 }
-————————————————————— public class Array{
+```
+
+```
+public class Array{
    
 public static void main(String args[]){
 int data[][]=new int[][]{{1,2,3},{4,5,6},{7,8,9}};
@@ -113,7 +124,7 @@ for(int y=0;y<temp[x].length;y++){ System.out.print(temp[x][y]+"、");
 
 
 
-\\数组拷贝
+数组拷贝
 ```
 public class Array{
 public static void main(String args[]){
@@ -125,7 +136,9 @@ public static void print(int temp[]){
 for(int x=0;x<temp.length;x++){ System.out.print(temp[x]+"、"); }
 System.out.println();
 } }
-————————————————————— \\Java排序
+```
+Java排序
+```
 public class Array{
 public static void main(String args[]){ int data[]=new int[]{6,3,9,23,2,45}; java.util.Arrays.sort(data); print(data);
 }
