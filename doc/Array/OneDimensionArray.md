@@ -122,8 +122,6 @@ for(int y=0;y<temp[x].length;y++){ System.out.print(temp[x][y]+"、");
 } }
 ```
 
-
-
 数组拷贝
 ```
 public class Array{
