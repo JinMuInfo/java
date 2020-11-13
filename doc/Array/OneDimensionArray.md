@@ -63,6 +63,7 @@ for(int i=0;i<a.length;i++){
 ### 1.4.  数组的定义与使用
 
 //排序，当你困了又睡不着的时候，就赶快滚起来学习，一般来说会更困，所以坚持到特别困就去睡觉，保证你睡的又快又好。如果不困，那么问题解决了。好好学习吧。 public class Array{
+```
 public static void main(String args[]){ int data[]=new int[]{2,1,0,9,5,13,7,6,8}; print (data);
 sort(data);
 print (data); }
@@ -108,10 +109,12 @@ public static void print(int temp[][]){ for(int x=0;x<temp.length;x++){
 for(int y=0;y<temp[x].length;y++){ System.out.print(temp[x][y]+"、");
 } System.out.println(); }
 } }
-—————————————————————
+```
+
 
 
 \\数组拷贝
+```
 public class Array{
 public static void main(String args[]){
 int dataA[]=new int[]{1,2,3,4,5,6,7,8};
@@ -131,3 +134,4 @@ for(int x=0;x<temp.length;x++){ System.out.print(temp[x]+"、");
 }
 System.out.println(); }
 }
+```
