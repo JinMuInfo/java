@@ -101,15 +101,16 @@ System.out.println(); }
 }
 ```
 
+示例如下
 ```
 public class Array{
-   
 public static void main(String args[]){
-int data[][]=new int[][]{{1,2,3},{4,5,6},{7,8,9}};
-print(data);
-reverse(data);
-print(data);
+  int data[][]=new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+  print(data);
+  reverse(data);
+  print(data);
 }
+
 public static void reverse(int arr[][]){
 for(int x=0;x<arr.length;x++){ for(int y=0;y<arr[x].length;y++){
 if(x!=y){
